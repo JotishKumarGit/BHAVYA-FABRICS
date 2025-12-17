@@ -4,7 +4,7 @@
     --primary-color: #8B4789;
     --secondary-color: #D4508D;
     --accent-color: #F4A261;
-    --dark-color: #2C1810;
+    --dark-color: rgb(40, 109, 211);
     --light-color: #FFF5F7;
 }
 
@@ -65,7 +65,7 @@ body {
 }
 
 .btn-quote {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(135deg, var(--dark-color), var(--secondary-color));
     color: white;
     padding: 10px 30px;
     border-radius: 25px;
@@ -176,7 +176,7 @@ body {
     text-align: center;
     padding: 20px;
     border-radius: 10px;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(135deg, var(--dark-color), var(--secondary-color));
     color: white;
     margin: 10px;
 }
@@ -296,7 +296,7 @@ body {
 .contact-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(135deg, var(--dark-color), var(--secondary-color));
     color: white;
     border-radius: 50%;
     display: flex;
@@ -313,7 +313,7 @@ body {
 
 /* Newsletter */
 .newsletter-section {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(135deg, var(--dark-color), var(--secondary-color));
     color: white;
     padding: 60px 0;
 }
