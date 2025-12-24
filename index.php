@@ -12,42 +12,9 @@
 </head>
 
 <body>
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <i class="fas fa-phone-alt me-2"></i> 7567127123 | 9099118988
-                    <span class="ms-3"><i class="fas fa-envelope me-2"></i> jagdishchevli@gmail.com</span>
-                </div>
-                <div class="col-md-6 text-end">
-                    <i class="fas fa-clock me-2"></i> Est. 2000 | Experience: 25+ Years
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Header -->
-    <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#home">BHAVYA FABRICS</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#home">🏠 Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">ℹ️ About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#products">📦 Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#gallery">🖼️ Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#blog">📝 Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">✉️ Contact</a></li>
-                </ul>
-            </div>
-            <button class="btn btn-quote d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#quoteModal">Get
-                Quote</button>
-        </div>
-    </nav>
+    <!-- header -->
+    <?php include('header.php') ?>
 
     <!-- Banner -->
     <section id="home" class="banner">
@@ -57,8 +24,8 @@
                     <h1>Premium Saree, Garments & Woven Fabric</h1>
                     <p class="lead mb-4">Manufacturing Excellence Since 2000 - Your Trusted Partner in Quality Textiles
                     </p>
-                    <button class="btn btn-light btn-lg me-3 mb-2"><i class="fas fa-shopping-bag me-2"></i>Explore
-                        Products</button>
+                    <a href="#products"><button class="btn btn-light btn-lg me-3 mb-2"><i class="fas fa-shopping-bag me-2"></i>Explore
+                            Products</button></a>
                     <button class="btn btn-outline-light btn-lg mb-2" data-bs-toggle="modal"
                         data-bs-target="#quoteModal"><i class="fas fa-phone me-2"></i>Contact Us</button>
                 </div>
@@ -148,6 +115,7 @@
             </div>
 
             <div class="row">
+                
                 <div class="col-md-4 mb-4">
                     <div class="card product-card">
                         <div class="product-img">
@@ -157,7 +125,7 @@
                             <h4 class="card-title text-primary">Premium Sarees</h4>
                             <p class="card-text">Exquisite collection of traditional and contemporary sarees crafted
                                 with finest materials and intricate designs.</p>
-                            <button class="btn btn-outline-primary">View Details</button>
+                            <a href="Premium_Sarees.php" class="text-decoration-none"><button class="btn btn-outline-primary">View Details</button></a>
                         </div>
                     </div>
                 </div>
@@ -171,7 +139,7 @@
                             <h4 class="card-title text-primary">Quality Garments</h4>
                             <p class="card-text">Wide range of garments designed for comfort and style, manufactured
                                 with precision and attention to detail.</p>
-                            <button class="btn btn-outline-primary">View Details</button>
+                            <a href="Quality_Garments.php" class="text-decoration-none"><button class="btn btn-outline-primary">View Details</button></a>
                         </div>
                     </div>
                 </div>
@@ -185,10 +153,11 @@
                             <h4 class="card-title text-primary">Woven Fabric</h4>
                             <p class="card-text">Premium woven fabrics in diverse textures and patterns, perfect for all
                                 your textile requirements.</p>
-                            <button class="btn btn-outline-primary">View Details</button>
+                            <a href="Woven_Fabric.php" class="text-decoration-none"><button class="btn btn-outline-primary">View Details</button></a>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -285,7 +254,7 @@
                             <h5 class="card-title">Latest Saree Trends 2024</h5>
                             <p class="card-text text-muted">Discover the newest trends in saree designs and what's
                                 making waves in the fashion industry...</p>
-                            <a href="#" class="text-primary fw-bold">Read More <i class="fas fa-arrow-right"></i></a>
+                            <a href="contact.php" class="text-primary fw-bold">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -301,7 +270,7 @@
                                 Discover our high-quality garments , comfort, and durability to
                                 meet the highest standards...
                             </p>
-                            <a href="#" class="text-primary fw-bold">Read More <i class="fas fa-arrow-right"></i></a>
+                            <a href="contact.php" class="text-primary fw-bold">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -315,7 +284,7 @@
                             <h5 class="card-title">Sustainable Fabric Production</h5>
                             <p class="card-text text-muted">Our commitment to sustainable practices and eco-friendly
                                 manufacturing processes...</p>
-                            <a href="#" class="text-primary fw-bold">Read More <i class="fas fa-arrow-right"></i></a>
+                            <a href="contact.php" class="text-primary fw-bold">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -413,158 +382,5 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <h5 class="text-white mb-4">BHAVYA FABRICS</h5>
-                    <div class="footer-links">
-                        <a href="">BHAVYA FABRICS has been a pioneer in the textile industry since 2000, specializing in
-                            premium sarees, garments, and woven fabrics. Under the visionary leadership of BOSKIBEN
-                            JAGDISHKUMAR CHEVLI, we have built a reputation for uncompromising quality and
-                            innovation.</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h5 class="text-white mb-4">Our Products</h5>
-                    <div class="footer-links">
-                        <a href="#products">Premium Sarees</a>
-                        <a href="#products">Quality Garments</a>
-                        <a href="#products">Woven Fabrics</a>
-                        <a href="#products">Custom Orders</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <h5 class="text-white mb-4">Quick Links</h5>
-                    <div class="footer-links">
-                        <a href="#home">Home</a>
-                        <a href="#about">About Us</a>
-                        <a href="#products">Products</a>
-                        <a href="#gallery">Gallery</a>
-                        <a href="#blog">Blog</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h5 class="text-white mb-4">Contact Info</h5>
-                    <div class="footer-links">
-                        <a href="tel:7567127123"><i class="fas fa-phone me-2"></i> 7567127123</a>
-                        <a href="tel:9099118988"><i class="fas fa-mobile-alt me-2"></i> 9099118988</a>
-                        <a href="mailto:jagdishchevli@gmail.com"><i class="fas fa-envelope me-2"></i>
-                            jagdishchevli@gmail.com</a>
-                        <a href="#"><i class="fas fa-map-marker-alt me-2"></i> HDFC Bank, PLOT NO 59 TO 63 BLOCK 106,
-                            SHREE SWAMINARAYAN INDUSTRY, KADODARA-BARDOLI ROAD, Palsana, Surat, Gujarat, 394315</a>
-                    </div>
-                </div>
-            </div>
-
-            <hr class="bg-light my-4">
-
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center  text-md-start mb-3 mb-md-0">
-                    <p class="mb-0">&copy; 2024 BHAVYA FABRICS. All Rights Reserved.</p>
-                </div>
-                <div class="col-md-6 text-center  text-md-end">
-                    <a href="https://trade4export.com " >
-                        <p class="mb-0 text-white">Designed By  Trade4Export</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Quote Modal -->
-    <div class="modal fade" id="quoteModal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header border-0">
-                    <h5 class="modal-title">Get a Quote</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body p-4">
-                    <form>
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Your Name" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Your Email" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="tel" class="form-control" placeholder="Phone Number" required>
-                        </div>
-                        <div class="mb-3">
-                            <select class="form-control" required>
-                                <option value="">Select Product Type</option>
-                                <option value="saree">Premium Sarees</option>
-                                <option value="garments">Quality Garments</option>
-                                <option value="fabric">Woven Fabric</option>
-                                <option value="custom">Custom Order</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" rows="4" placeholder="Your Requirements" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-quote w-100">Submit Quote Request</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Scroll to Top Button -->
-    <button class="btn btn-quote position-fixed bottom-0 end-0 m-4"
-        style="z-index: 999; border-radius: 100%; width: 70px; height: 70px;"
-        onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-
-    <script>
-        // Smooth scroll for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                    // Close mobile menu if open
-                    const navbarCollapse = document.querySelector('.navbar-collapse');
-                    if (navbarCollapse.classList.contains('show')) {
-                        navbarCollapse.classList.remove('show');
-                    }
-                }
-            });
-        });
-
-        // Active nav link on scroll
-        window.addEventListener('scroll', () => {
-            let current = '';
-            const sections = document.querySelectorAll('section[id]');
-
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (pageYOffset >= (sectionTop - 200)) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            document.querySelectorAll('.nav-link').forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('active');
-                }
-            });
-        });
-    </script>
-
-</body>
-
-</html>
+    <!-- footer -->
+    <?php include('footer.php') ?>
